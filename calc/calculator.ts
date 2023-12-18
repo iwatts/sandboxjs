@@ -7,11 +7,11 @@ interface arithmaticOperator {
     DIV: '/'
 };
 type solution = number|string;
-const currentInput = document.getElementById('currentInput') as HTMLInputElement | null;
+const currentInput = document.getElementById('result') as HTMLInputElement | null;
 const previousInput = document.getElementById('previousInput') as HTMLInputElement | null;
 
 function isNumber(value) {
-  return typeof value === 'number';
+    return typeof value === 'number';
 }
 
 function hasError(){
