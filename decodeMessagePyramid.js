@@ -36,3 +36,8 @@ Promise((resolve, reject) => {
   const decodedMessage = await decode(new File(['3 love\n6 computers\n2 dogs\n4 cats\n1 I\n5 you'], 'message.txt', { type: 'text/plain' }));
   console.log(decodedMessage); // Output: I love computers
 })();
+
+(async () => {
+  const decodedMessage = await fetch('decodeMessage.txt');
+  console.log(decodedMessage); // Output: I love computers
+})();
