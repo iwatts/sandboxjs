@@ -1,0 +1,24 @@
+.banner-image-container {
+	position: relative;
+}
+.container-content{
+    position: relative;
+    z-index: 10;
+}
+
+.image-asset {
+	background-image: url("../assets/pexels-pixabay-221471.jpg");
+	background-size: cover;
+	background-position: top right;
+	width: 100%;
+	height: 100%;
+}
+
+.image-mask {
+	mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
