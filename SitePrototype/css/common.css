@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+
+h1,
+h2,
+h3,
+.navbar-brand {
+	font-family: "Island Moments", cursive;
+}
+a.navbar-brand {
+	font-size: xx-large;
+}
+.navbar-dark.navbar-tanitia-dark {
+	background-color: #165c45 !important;
+}
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #c7fdf7;
+	text-shadow: none; /* Prevent inheritance from `body` */
+	background-color: #165c45;
+	border: 0.05rem solid #165c45;
+}

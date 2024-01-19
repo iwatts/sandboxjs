@@ -9,16 +9,6 @@ a:hover {
 	color: #165c45;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-	color: #c7fdf7;
-	text-shadow: none; /* Prevent inheritance from `body` */
-	background-color: #165c45;
-	border: 0.05rem solid #165c45;
-}
-
 /*
  * Base structure
  */
@@ -54,6 +44,7 @@ body {
 
 .masthead-brand {
 	margin-bottom: 0;
+	font-size: 4rem;
 }
 
 .nav-masthead .nav-link {

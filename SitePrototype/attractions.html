@@ -22,10 +22,13 @@
 
 		<!-- Custom styles for this template -->
 		<link href="css/jumbotron.css" rel="stylesheet" />
+		<link href="css/common.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav
+			class="navbar navbar-expand-md navbar-dark navbar-tanitia-dark fixed-top bg-dark"
+		>
 			<a class="navbar-brand" href="index.html">Tanitia</a>
 			<button
 				class="navbar-toggler"
@@ -42,7 +45,7 @@
 			<div class="collapse navbar-collapse" id="navbarTanitia">
 				<div class="mr-auto"></div>
 				<ul class="navbar-nav my-2 my-lg-0">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="/SitePrototype/accommodations.html"
 							>Accommodations</a
 						>
@@ -76,7 +79,7 @@
 				<div class="container container-content">
 					<div class="row">
 						<div class="col-md-6">
-							<h1 class="display-3">Accommodations</h1>
+							<h1 class="display-3">Attractions</h1>
 							<p>
 								This is a template for a simple marketing or informational
 								website. It includes a large callout called a jumbotron and
@@ -84,7 +87,7 @@
 								to create something more unique.
 							</p>
 							<p>
-								<a class="btn btn-primary btn-lg" href="#" role="button"
+								<a class="btn btn-secondary btn-lg" href="#" role="button"
 									>Learn more &raquo;</a
 								>
 							</p>
@@ -92,7 +95,48 @@
 					</div>
 				</div>
 				<div class="image-mask">
-					<div class="image-asset"></div>
+					<div class="image-asset attractions"></div>
+				</div>
+			</div>
+
+			<div class="container mb-5">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Categories</h2>
+						<p>
+							Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+							tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+							fermentum massa justo sit amet risus. Etiam porta sem malesuada
+							magna mollis euismod. Donec sed odio dui.
+						</p>
+					</div>
+				</div>
+				<div class="row d-flex justify-content-center mt-100">
+					<div class="col-md-12">
+						<select
+							id="choices-multiple-remove-button"
+							placeholder="Select related tags to display"
+							multiple
+						>
+							<option value="Adult">Adult</option>
+							<option value="Dining">Dining</option>
+							<option value="Events">Events</option>
+							<option value="Family">Family</option>
+							<option value="Fun">Fun</option>
+							<option value="Games">Games</option>
+							<option value="General">General Entertainment</option>
+							<option value="Health">Health & Wellness</option>
+							<option value="Historic">Historic</option>
+							<option value="Private">Private</option>
+							<option value="Public">Public</option>
+							<option value="Relaxation">Relaxation</option>
+							<option value="Romantic">Romantic</option>
+							<option value="Scenic">Scenic</option>
+							<option value="Seasonal">Seasonal</option>
+							<option value="Shopping">Shopping</option>
+							<option value="Social">Social</option>
+						</select>
+					</div>
 				</div>
 			</div>
 
@@ -155,6 +199,13 @@
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -165,6 +216,17 @@
 				document.write(
 					'<script src="dist/js/vendor/jquery-slim.min.js"><\/script>'
 				);
+
+			$(document).ready(function () {
+				var multipleCancelButton = new Choices(
+					"#choices-multiple-remove-button",
+					{
+						removeItemButton: true,
+						searchResultLimit: 5,
+						renderChoiceLimit: 5,
+					}
+				);
+			});
 		</script>
 		<script src="dist/js/vendor/popper.min.js"></script>
 		<script src="dist/js/bootstrap.min.js"></script>
