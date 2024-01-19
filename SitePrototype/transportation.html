@@ -29,6 +29,7 @@
 		<!-- Custom styles for this template -->
 		<link href="css/jumbotron.css" rel="stylesheet" />
 		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/accordion.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -83,7 +84,7 @@
 			<!-- Main jumbotron for a primary marketing message or call to action -->
 			<div class="jumbotron banner-image-container">
 				<div class="container container-content">
-					<div class="row">
+					<div class="row equal mb-5">
 						<div class="col-md-6">
 							<h1 class="display-3">Transportation</h1>
 							<p>
@@ -119,9 +120,9 @@
 							fermentum massa justo sit amet risus. Etiam porta sem malesuada
 							magna mollis euismod. Donec sed odio dui.
 						</p>
-						<p>
+						<p class="text-center">
 							<a
-								class="btn btn-secondary"
+								class="btn btn-outline-secondary btn-block"
 								data-toggle="collapse"
 								href="#collapseCarList"
 								role="button"
@@ -133,13 +134,28 @@
 						</p>
 						<div class="collapse" id="collapseCarList">
 							<div class="card card-body">
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item">Cras justo odio <i class="bi float-right bi-arrow-right"></i></li>
-									<li class="list-group-item">Dapibus ac facilisis in <i class="bi float-right bi-arrow-right"></i></li>
-									<li class="list-group-item">Morbi leo risus <i class="bi float-right bi-arrow-right"></i></li>
-									<li class="list-group-item">Porta ac consectetur ac <i class="bi float-right bi-arrow-right"></i></li>
-									<li class="list-group-item">Vestibulum at eros <i class="bi float-right bi-arrow-right"></i></li>
-								</ul>
+								<div class="list-group list-group-flush">
+									<a href="#" class="list-group-item list-group-item-action"
+										>Cras justo odio
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Dapibus ac facilisis in
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Morbi leo risus
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Porta ac consectetur ac
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Vestibulum at eros
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -151,11 +167,44 @@
 							fermentum massa justo sit amet risus. Etiam porta sem malesuada
 							magna mollis euismod. Donec sed odio dui.
 						</p>
-						<p>
-							<a class="btn btn-secondary" href="#" role="button"
-								>View details &raquo;</a
+						<p class="text-center">
+							<a
+								class="btn btn-outline-secondary btn-block"
+								data-toggle="collapse"
+								href="#collapseBusList"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseBusList"
 							>
+								List <i class="bi bi-arrow-down-circle"></i>
+							</a>
 						</p>
+						<div class="collapse" id="collapseBusList">
+							<div class="card card-body">
+								<div class="list-group list-group-flush">
+									<a href="#" class="list-group-item list-group-item-action"
+										>Cras justo odio
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Dapibus ac facilisis in
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Morbi leo risus
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Porta ac consectetur ac
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Vestibulum at eros
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<h4><i class="bi bi-bicycle"></i> Bicycle</h4>
@@ -165,12 +214,47 @@
 							semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
 							condimentum nibh, ut fermentum massa justo sit amet risus.
 						</p>
-						<p>
-							<a class="btn btn-secondary" href="#" role="button"
-								>View details &raquo;</a
+						<p class="text-center">
+							<a
+								class="btn btn-outline-secondary btn-block"
+								data-toggle="collapse"
+								href="#collapseBikeList"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseBikeList"
 							>
+								List <i class="bi bi-arrow-down-circle"></i>
+							</a>
 						</p>
+						<div class="collapse" id="collapseBikeList">
+							<div class="card card-body">
+								<div class="list-group list-group-flush">
+									<a href="#" class="list-group-item list-group-item-action"
+										>Cras justo odio
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Dapibus ac facilisis in
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Morbi leo risus
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Porta ac consectetur ac
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Vestibulum at eros
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div class="row equal">
 					<div class="col-md-4">
 						<h4><i class="bi bi-scooter"></i> Scooters</h4>
 						<p>
@@ -179,11 +263,44 @@
 							semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
 							condimentum nibh, ut fermentum massa justo sit amet risus.
 						</p>
-						<p>
-							<a class="btn btn-secondary" href="#" role="button"
-								>View details &raquo;</a
+						<p class="text-center">
+							<a
+								class="btn btn-outline-secondary btn-block"
+								data-toggle="collapse"
+								href="#collapseScooterList"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseScooterList"
 							>
+								List <i class="bi bi-arrow-down-circle"></i>
+							</a>
 						</p>
+						<div class="collapse" id="collapseScooterList">
+							<div class="card card-body">
+								<div class="list-group list-group-flush">
+									<a href="#" class="list-group-item list-group-item-action"
+										>Cras justo odio
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Dapibus ac facilisis in
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Morbi leo risus
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Porta ac consectetur ac
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Vestibulum at eros
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<h4><i class="bi bi-key"></i> Other</h4>
@@ -193,11 +310,44 @@
 							semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
 							condimentum nibh, ut fermentum massa justo sit amet risus.
 						</p>
-						<p>
-							<a class="btn btn-secondary" href="#" role="button"
-								>View details &raquo;</a
+						<p class="text-center">
+							<a
+								class="btn btn-outline-secondary btn-block"
+								data-toggle="collapse"
+								href="#collapseOtherList"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseOtherList"
 							>
+								List <i class="bi bi-arrow-down-circle"></i>
+							</a>
 						</p>
+						<div class="collapse" id="collapseOtherList">
+							<div class="card card-body">
+								<div class="list-group list-group-flush">
+									<a href="#" class="list-group-item list-group-item-action"
+										>Cras justo odio
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Dapibus ac facilisis in
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Morbi leo risus
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Porta ac consectetur ac
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+									<a href="#" class="list-group-item list-group-item-action"
+										>Vestibulum at eros
+										<i class="bi float-right bi-arrow-right"></i
+									></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 

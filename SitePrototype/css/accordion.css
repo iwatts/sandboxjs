@@ -1,0 +1,15 @@
+a.btn.btn-outline-secondary.btn-block[aria-expanded="true"]
+	.bi-arrow-down-circle {
+	transform: rotate(180deg);
+}
+
+.bi-arrow-down-circle {
+	transition: all 0.3s ease;
+	transform: rotate(0deg);
+	display: inline-block;
+}
+
+.row.equal {
+	display: flex;
+	flex-wrap: wrap;
+}

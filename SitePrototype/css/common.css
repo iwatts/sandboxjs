@@ -21,3 +21,13 @@ a.navbar-brand {
 	background-color: #165c45;
 	border: 0.05rem solid #165c45;
 }
+
+/* Custom default outline button */
+.btn-outline-secondary,
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+	color: #165c45;
+    background-color: transparent;
+    background-image: none;
+    border-color: #165c45;
+}
