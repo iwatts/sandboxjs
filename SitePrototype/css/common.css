@@ -12,6 +12,10 @@ a.navbar-brand {
 .navbar-dark.navbar-tanitia-dark {
 	background-color: #165c45 !important;
 }
+h2 {
+    font-size: 48px;
+}
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -30,4 +34,9 @@ a.navbar-brand {
     background-color: transparent;
     background-image: none;
     border-color: #165c45;
+}
+
+.choices__list--multiple .choices__item{
+    background-color: #62B6CB !important;
+    border: 1px solid #165c45 !important;
 }
