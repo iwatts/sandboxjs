@@ -41,37 +41,37 @@
 	<table id="calcu"> 
 		<tr> 
 			<td colspan="3"> 
-				<input type="text" id="result"> 
+				<input type="text" id="result" name="result" value=""> 
 			</td> 
-			<td><input type="button" value="c"></td> 
+			<td><input type="button" onclick="clearDisplay()" value="c"></td> 
 		</tr> 
 
 		<tr> 
-			<td><input type="button" value="1"></td> 
-			<td><input type="button" value="2"></td> 
-			<td><input type="button" value="3"></td> 
-			<td><input type="button" value="/"></td> 
+			<td><input type="button" onclick="appendInputVal(1)" value="1"></td> 
+			<td><input type="button" onclick="appendInputVal(2)" value="2"></td> 
+			<td><input type="button" onclick="appendInputVal(3)" value="3"></td> 
+			<td><input type="button" onclick="appendInputVal('/')" value="/"></td> 
 		</tr> 
 		<tr> 
-			<td><input type="button" value="4"></td> 
-			<td><input type="button" value="5"></td> 
-			<td><input type="button" value="6"></td> 
-			<td><input type="button" value="*"></td> 
+			<td><input type="button" onclick="appendInputVal(4)" value="4"></td> 
+			<td><input type="button" onclick="appendInputVal(5)" value="5"></td> 
+			<td><input type="button" onclick="appendInputVal(6)" value="6"></td> 
+			<td><input type="button" onclick="appendInputVal('*')" value="*"></td> 
 		</tr> 
 		<tr> 
-			<td><input type="button" value="7"></td> 
-			<td><input type="button" value="8"></td> 
-			<td><input type="button" value="9"></td> 
-			<td><input type="button" value="-"></td> 
+			<td><input type="button" onclick="appendInputVal(7)" value="7"></td> 
+			<td><input type="button" onclick="appendInputVal(8)" value="8"></td> 
+			<td><input type="button" onclick="appendInputVal(9)" value="9"></td> 
+			<td><input type="button" onclick="appendInputVal('-')" value="-"></td> 
 		</tr> 
 		<tr> 
-			<td><input type="button" value="0"></td> 
-			<td><input type="button" value="."></td> 
-			<td><input type="button" value="="></td> 
-			<td><input type="button" value="+"></td> 
+			<td><input type="button" onclick="appendInputVal(0)" value="0"></td> 
+			<td><input type="button" onclick="appendInputVal('.')" value="."></td> 
+			<td><input type="button" onclick="runEquation()" value="="></td> 
+			<td><input type="button" onclick="appendInputVal('+')" value="+"></td> 
 		</tr> 
 	</table>
-	<div class="history">
+	<div class="history" id="activeValue">
 
 	</div>
 </body> 
